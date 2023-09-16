@@ -7,8 +7,8 @@ add_executable(Black_Jack
         main.cpp
         DeckOfCards.cpp
         DeckOfCards.h
-        BlackjackDealer.cpp
-        BlackjackDealer.h
         Card.cpp
         Card.h
+        Player.cpp
+        Player.h
 )

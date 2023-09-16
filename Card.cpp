@@ -10,7 +10,7 @@ Card::Card() {
 Card::Card(int suit, int type) {
     this->suit = cardSuits(suit);
     this->type = cardTypes(type);
-    value = type;
+    value = (type >=10) ? 10 : type;
 }
 
 cardTypes Card::getType() const {
