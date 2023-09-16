@@ -36,9 +36,10 @@ private:
         Card();
         Card(int suit, int type);
     };
-    void swapCards(int index1, int index2);
     const static int DECKSIZE = 52;
     Card deck[DECKSIZE];
+    int cardsDealt = 0;
+    void swapCards(int index1, int index2);
 public:
     DeckOfCards();
     Card deal();

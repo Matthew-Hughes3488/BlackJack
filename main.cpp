@@ -5,7 +5,8 @@ using namespace std;
 
 int main(){
     auto deck = new DeckOfCards;
-    deck->shuffleDeck();
-    cout << "done";
+    for (int i = 0; i < 53; i++)
+        auto card = deck->deal();
+
     return 0;
 }
