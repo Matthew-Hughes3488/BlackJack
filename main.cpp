@@ -4,9 +4,6 @@
 using namespace std;
 
 int main(){
-    auto deck = new DeckOfCards;
-    for (int i = 0; i < 53; i++)
-        auto card = deck->deal();
-
+    auto deck = new DeckOfCards();
     return 0;
 }

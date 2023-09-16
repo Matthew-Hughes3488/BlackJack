@@ -61,6 +61,18 @@ build CMakeFiles/Black_Jack.dir/DeckOfCards.cpp.o: CXX_COMPILER__Black_Jack_unsc
   OBJECT_DIR = CMakeFiles/Black_Jack.dir
   OBJECT_FILE_DIR = CMakeFiles/Black_Jack.dir
 
+build CMakeFiles/Black_Jack.dir/BlackjackDealer.cpp.o: CXX_COMPILER__Black_Jack_unscanned_Debug /Users/matthewhughes/Documents/Git$ Projects/Black-Jack/BlackjackDealer.cpp || cmake_object_order_depends_target_Black_Jack
+  DEP_FILE = CMakeFiles/Black_Jack.dir/BlackjackDealer.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Black_Jack.dir
+  OBJECT_FILE_DIR = CMakeFiles/Black_Jack.dir
+
+build CMakeFiles/Black_Jack.dir/Card.cpp.o: CXX_COMPILER__Black_Jack_unscanned_Debug /Users/matthewhughes/Documents/Git$ Projects/Black-Jack/Card.cpp || cmake_object_order_depends_target_Black_Jack
+  DEP_FILE = CMakeFiles/Black_Jack.dir/Card.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Black_Jack.dir
+  OBJECT_FILE_DIR = CMakeFiles/Black_Jack.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Black_Jack
@@ -69,7 +81,7 @@ build CMakeFiles/Black_Jack.dir/DeckOfCards.cpp.o: CXX_COMPILER__Black_Jack_unsc
 #############################################
 # Link the executable Black_Jack
 
-build Black_Jack: CXX_EXECUTABLE_LINKER__Black_Jack_Debug CMakeFiles/Black_Jack.dir/main.cpp.o CMakeFiles/Black_Jack.dir/DeckOfCards.cpp.o
+build Black_Jack: CXX_EXECUTABLE_LINKER__Black_Jack_Debug CMakeFiles/Black_Jack.dir/main.cpp.o CMakeFiles/Black_Jack.dir/DeckOfCards.cpp.o CMakeFiles/Black_Jack.dir/BlackjackDealer.cpp.o CMakeFiles/Black_Jack.dir/Card.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/Black_Jack.dir
   POST_BUILD = :

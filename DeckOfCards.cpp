@@ -5,15 +5,6 @@
 
 using namespace std;
 
-DeckOfCards::Card::Card() {
-}
-
-DeckOfCards::Card::Card(int suit, int type) {
-    this->suit = cardSuits(suit);
-    this->type = cardTypes(type);
-    value = type;
-}
-
 DeckOfCards::DeckOfCards() {
     reset();
 }
@@ -44,14 +35,10 @@ void DeckOfCards::reset() {
     cardsDealt = 0;
 }
 
-DeckOfCards::Card DeckOfCards::deal() {
+Card DeckOfCards::deal() {
     if(cardsDealt == 52)
         throw std::invalid_argument("Deck is empty");
 
-    return deck[cardsDealt++];
+    const auto card = deck[cardsDealt++];
+    return card;
 }
-
-
-
-
-
