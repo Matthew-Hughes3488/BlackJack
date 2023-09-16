@@ -1,10 +1,9 @@
 #include <iostream>
 #include "DeckOfCards.h"
+#include "BlackJackPlayer.h"
 
 using namespace std;
 
 int main(){
-    auto deck = new DeckOfCards();
-    cout << 10;
     return 0;
 }

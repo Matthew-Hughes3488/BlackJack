@@ -1,7 +1,9 @@
 # ninja log v5
 6	325	1694897335942019165	CMakeFiles/Black_Jack.dir/DeckOfCards.cpp.o	2202cd85f6d7a5f5
-6	186	1694897335801139121	CMakeFiles/Black_Jack.dir/Card.cpp.o	b19a1db92e3ae50e
 6	325	1694897335941644330	CMakeFiles/Black_Jack.dir/BlackjackDealer.cpp.o	757a2857ba00507
-233	280	1694897340682005278	Black_Jack	106a2b04945442b4
-3	233	1694897340633947815	CMakeFiles/Black_Jack.dir/main.cpp.o	fc3b3ee696b4a6d8
-1	62	1694898581528865281	build.ninja	8429b26227760b33
+6	186	1694897335801139121	CMakeFiles/Black_Jack.dir/Card.cpp.o	b19a1db92e3ae50e
+5	345	1694900198974946070	CMakeFiles/Black_Jack.dir/Player.cpp.o	3e8e1d0948ba3923
+432	477	1694900471104393729	Black_Jack	e8fd28ae39cfb11f
+5	432	1694900471054147753	CMakeFiles/Black_Jack.dir/main.cpp.o	fc3b3ee696b4a6d8
+1	62	1694900558352117974	build.ninja	8429b26227760b33
+6	346	1694900198974949695	CMakeFiles/Black_Jack.dir/BlackJackPlayer.cpp.o	98a699fc7d01b175
