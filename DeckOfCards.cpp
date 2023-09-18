@@ -35,10 +35,10 @@ void DeckOfCards::reset() {
     cardsDealt = 0;
 }
 
-Card DeckOfCards::deal() {
+Card& DeckOfCards::deal() {
     if(cardsDealt == 52)
         throw std::invalid_argument("Deck is empty");
 
-    const auto card = deck[cardsDealt++];
+    Card& card = deck[cardsDealt++];
     return card;
 }

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Black_Jack::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Black_Jack-Debug-6d3627ddc61873e903fc.json",
+					"jsonFile" : "target-Black_Jack-Debug-60f51c2e4f3b4c154f69.json",
 					"name" : "Black_Jack",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/matthewhughes/Documents/Git Projects/Black-Jack/cmake-build-debug",
-		"source" : "/Users/matthewhughes/Documents/Git Projects/Black-Jack"
+		"build" : "/Users/matthewhughes/Documents/Git Projects/BlackJack/cmake-build-debug",
+		"source" : "/Users/matthewhughes/Documents/Git Projects/BlackJack"
 	},
 	"version" : 
 	{

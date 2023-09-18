@@ -15,4 +15,6 @@ add_executable(Black_Jack
         BlackJackPlayer.h
         Dealer.cpp
         Dealer.h
+        BlackJackDealer.cpp
+        BlackJackDealer.h
 )

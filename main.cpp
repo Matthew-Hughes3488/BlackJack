@@ -1,6 +1,7 @@
 #include <iostream>
 #include "DeckOfCards.h"
 #include "BlackJackPlayer.h"
+#include "Player.h"
 
 using namespace std;
 

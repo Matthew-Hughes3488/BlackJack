@@ -5,17 +5,22 @@
 #ifndef BLACK_JACK_PLAYER_H
 #define BLACK_JACK_PLAYER_H
 
-#include "DeckOfCards.h"
+
 #include "Card.h"
+#include <cstring>
 
 class Player {
-private:
+protected:
+    int accoutFunds = 0;
     int cardsRecived = 0;
     Card currentHand[5];
 public:
-    void hit(Card card);
-    int handValue();
-    bool isBust();
+    virtual void hit(Card& card) = 0;
+    virtual int handValue() = 0;
+    virtual bool isBust() = 0;
+    virtual bool doesStand() = 0;
+    virtual void increaseAccountFunds(int amount) = 0;
+    virtual void placeBet(int amount) = 0;
 };
 
 

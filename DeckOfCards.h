@@ -14,7 +14,7 @@ private:
     void swapCards(int index1, int index2);
 public:
     DeckOfCards();
-    Card deal();
+    Card& deal();
     void reset();
     void shuffleDeck();
 };

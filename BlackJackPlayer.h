@@ -1,19 +1,21 @@
 //
-// Created by Matthew Hughes on 16/09/2023.
+// Created by Matthew Hughes on 18/09/2023.
 //
 
 #ifndef BLACK_JACK_BLACKJACKPLAYER_H
 #define BLACK_JACK_BLACKJACKPLAYER_H
 
+#include <iostream>
 #include "Player.h"
 
-
 class BlackJackPlayer : public Player{
-private:
-    int playerFunds;
 public:
-    void topUp(int cash);
-    void placeBet(int bet);
+    void hit(Card& card) override;
+    int handValue() override;
+    bool isBust() override;
+    bool doesStand() override;
+    void increaseAccountFunds(int amount) override;
+    void placeBet(int amount) override;
 };
 
 

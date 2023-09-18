@@ -1,14 +1,58 @@
 //
-// Created by Matthew Hughes on 16/09/2023.
+// Created by Matthew Hughes on 18/09/2023.
 //
 
 #include "BlackJackPlayer.h"
 
-void BlackJackPlayer::topUp(int cash) {
-    playerFunds += cash;
+using namespace std;
+
+void BlackJackPlayer::hit(Card& card) {
+    if (cardsRecived > 5)
+        throw std::invalid_argument("Hand is full");
+
+    currentHand[cardsRecived++] = card;
 }
 
-void BlackJackPlayer::placeBet(int bet) {
-    if(bet > playerFunds)
+int BlackJackPlayer::handValue() {
+    int sum = 0;
+    int numberOfAces = 0;
+    for(int i = 0; i < cardsRecived; i++){
+        sum += currentHand[i].getValue();
+        if(currentHand[i].getType() == ACE)
+            numberOfAces++;
+    }
+
+    while (numberOfAces > 0){
+        if((sum + 10) > 21)
+            break;
+        sum += 10;
+        numberOfAces--;
+    }
+
+    return sum;
+}
+
+bool BlackJackPlayer::isBust() {
+    return handValue() > 21;
+}
+
+bool BlackJackPlayer::doesStand() {
+    char stand;
+    cout << "Do you stand? Y/N: ";
+    cin >> stand;
+    return (stand == 'Y');
+}
+
+void BlackJackPlayer::increaseAccountFunds(int amount) {
+    if(amount < 0)
+        throw std::invalid_argument("Amount is less than 0");
+
+    accoutFunds += amount;
+}
+
+void BlackJackPlayer::placeBet(int amount) {
+    if(amount > accoutFunds)
         throw std::invalid_argument("Not enough funds");
+
+    accoutFunds -= amount;
 }
