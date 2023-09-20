@@ -6,6 +6,13 @@
 
 using namespace std;
 
+BlackJackPlayer::BlackJackPlayer() {
+}
+
+BlackJackPlayer::BlackJackPlayer(int initalFunds) {
+    accoutFunds = initalFunds;
+}
+
 void BlackJackPlayer::hit(Card& card) {
     if (cardsRecived > 5)
         throw std::invalid_argument("Hand is full");
@@ -36,11 +43,16 @@ bool BlackJackPlayer::isBust() {
     return handValue() > 21;
 }
 
-bool BlackJackPlayer::doesStand() {
-    char stand;
-    cout << "Do you stand? Y/N: ";
-    cin >> stand;
-    return (stand == 'Y');
+bool BlackJackPlayer::doesHit() {
+    if(isBust()) {
+        cout << "You bust, your hand total is " << handValue();
+        return false;
+    }
+
+    char hit;
+    cout << "Do you hit? Y/N: ";
+    cin >> hit;
+    return !(hit == 'N');
 }
 
 void BlackJackPlayer::increaseAccountFunds(int amount) {
@@ -50,9 +62,14 @@ void BlackJackPlayer::increaseAccountFunds(int amount) {
     accoutFunds += amount;
 }
 
-void BlackJackPlayer::placeBet(int amount) {
-    if(amount > accoutFunds)
+int BlackJackPlayer::placeBet() {
+    int bet;
+    cout << "Enter your bet: ";
+    cin >> bet;
+
+    if(bet > accoutFunds)
         throw std::invalid_argument("Not enough funds");
 
-    accoutFunds -= amount;
+    accoutFunds -= bet;
+    return bet;
 }

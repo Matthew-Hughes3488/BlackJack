@@ -16,7 +16,8 @@ public:
     virtual void hit(Card& card) = 0;
     virtual int handValue() = 0;
     virtual bool isBust() = 0;
-    virtual bool doesStand() = 0;
+    virtual bool doesHit() = 0;
+    virtual Card* getHand() = 0;
 };
 
 

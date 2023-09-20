@@ -84,6 +84,12 @@
 		<Unit filename="/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackDealer.h">
 			<Option target="Black_Jack"/>
 		</Unit>
+		<Unit filename="/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackGame.cpp">
+			<Option target="Black_Jack"/>
+		</Unit>
+		<Unit filename="/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackGame.h">
+			<Option target="Black_Jack"/>
+		</Unit>
 		<Unit filename="/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackPlayer.cpp">
 			<Option target="Black_Jack"/>
 		</Unit>

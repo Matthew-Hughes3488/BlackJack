@@ -153,6 +153,30 @@ BlackJackDealer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black_Jack.dir/build.make CMakeFiles/Black_Jack.dir/BlackJackDealer.cpp.s
 .PHONY : BlackJackDealer.cpp.s
 
+BlackJackGame.o: BlackJackGame.cpp.o
+.PHONY : BlackJackGame.o
+
+# target to build an object file
+BlackJackGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black_Jack.dir/build.make CMakeFiles/Black_Jack.dir/BlackJackGame.cpp.o
+.PHONY : BlackJackGame.cpp.o
+
+BlackJackGame.i: BlackJackGame.cpp.i
+.PHONY : BlackJackGame.i
+
+# target to preprocess a source file
+BlackJackGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black_Jack.dir/build.make CMakeFiles/Black_Jack.dir/BlackJackGame.cpp.i
+.PHONY : BlackJackGame.cpp.i
+
+BlackJackGame.s: BlackJackGame.cpp.s
+.PHONY : BlackJackGame.s
+
+# target to generate assembly for a file
+BlackJackGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black_Jack.dir/build.make CMakeFiles/Black_Jack.dir/BlackJackGame.cpp.s
+.PHONY : BlackJackGame.cpp.s
+
 BlackJackPlayer.o: BlackJackPlayer.cpp.o
 .PHONY : BlackJackPlayer.o
 
@@ -309,6 +333,9 @@ help:
 	@echo "... BlackJackDealer.o"
 	@echo "... BlackJackDealer.i"
 	@echo "... BlackJackDealer.s"
+	@echo "... BlackJackGame.o"
+	@echo "... BlackJackGame.i"
+	@echo "... BlackJackGame.s"
 	@echo "... BlackJackPlayer.o"
 	@echo "... BlackJackPlayer.i"
 	@echo "... BlackJackPlayer.s"

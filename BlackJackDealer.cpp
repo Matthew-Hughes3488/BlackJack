@@ -34,9 +34,16 @@ bool BlackJackDealer::isBust() {
     return handValue() > 21;
 }
 
-bool BlackJackDealer::doesStand() {
+bool BlackJackDealer::doesHit() {
+    if(isBust())
+        return false;
+
     if(handValue() >= 17)
         return true;
 
     return false;
+}
+
+Card* BlackJackDealer::getHand() {
+    return currentHand;
 }

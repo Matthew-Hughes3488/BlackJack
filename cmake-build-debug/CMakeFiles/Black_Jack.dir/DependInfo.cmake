@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackDealer.cpp" "CMakeFiles/Black_Jack.dir/BlackJackDealer.cpp.o" "gcc" "CMakeFiles/Black_Jack.dir/BlackJackDealer.cpp.o.d"
+  "/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackGame.cpp" "CMakeFiles/Black_Jack.dir/BlackJackGame.cpp.o" "gcc" "CMakeFiles/Black_Jack.dir/BlackJackGame.cpp.o.d"
   "/Users/matthewhughes/Documents/Git Projects/BlackJack/BlackJackPlayer.cpp" "CMakeFiles/Black_Jack.dir/BlackJackPlayer.cpp.o" "gcc" "CMakeFiles/Black_Jack.dir/BlackJackPlayer.cpp.o.d"
   "/Users/matthewhughes/Documents/Git Projects/BlackJack/Card.cpp" "CMakeFiles/Black_Jack.dir/Card.cpp.o" "gcc" "CMakeFiles/Black_Jack.dir/Card.cpp.o.d"
   "/Users/matthewhughes/Documents/Git Projects/BlackJack/Dealer.cpp" "CMakeFiles/Black_Jack.dir/Dealer.cpp.o" "gcc" "CMakeFiles/Black_Jack.dir/Dealer.cpp.o.d"

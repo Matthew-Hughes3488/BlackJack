@@ -11,10 +11,12 @@
 using namespace std;
 
 class BlackJackDealer : public Dealer{
+public:
     void hit(Card& card);
     int handValue();
     bool isBust();
-    bool doesStand();
+    bool doesHit();
+    Card* getHand();
 };
 
 

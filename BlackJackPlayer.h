@@ -10,12 +10,14 @@
 
 class BlackJackPlayer : public Player{
 public:
+    BlackJackPlayer();
+    explicit BlackJackPlayer(int initialFunds);
     void hit(Card& card) override;
     int handValue() override;
     bool isBust() override;
-    bool doesStand() override;
+    bool doesHit() override;
     void increaseAccountFunds(int amount) override;
-    void placeBet(int amount) override;
+    int placeBet() override;
 };
 
 

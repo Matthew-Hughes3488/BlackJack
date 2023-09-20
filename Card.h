@@ -30,16 +30,12 @@ class Card {
 public:
     Card();
     Card(int suit, int type);
-private:
-    cardTypes type;
-public:
     cardTypes getType() const;
-
     cardSuits getSuit() const;
-
     int getValue() const;
 
 private:
+    cardTypes type;
     cardSuits suit;
     int value;
 };
